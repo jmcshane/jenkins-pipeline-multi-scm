@@ -6,7 +6,7 @@ node('master') {
        git url: 'https://github.com/jmcshane/hubot-taskmaster'
       checkout scm
     }
-    ls
+    sh """ls
     ls main-repo
-    ls other-repo
+    ls other-repo"""
 }
