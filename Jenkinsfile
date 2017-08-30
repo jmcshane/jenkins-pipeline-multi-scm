@@ -4,7 +4,6 @@ node('master') {
     }
     dir('other-repo') {
        git url: 'https://github.com/jmcshane/hubot-taskmaster'
-      checkout scm
     }
     sh """ls
     ls main-repo
